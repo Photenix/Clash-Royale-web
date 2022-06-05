@@ -1,0 +1,144 @@
+:root{
+    --back-img : url("./img/background.png");
+    --button-color : rgba(18, 46, 205, 0.83);
+}
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+
+body{
+    background-image: var(--back-img);
+    object-fit: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-width: 650px;
+    min-height: 400px;
+    background-color: aliceblue;
+    margin: 20% 0 auto 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 10%;
+}
+
+.container button{
+    width: 50px;
+    height: 50px;
+    margin: 25% 4px;
+    border-radius: 50%;
+
+    color: white;
+}
+
+.button-able{
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.button-disable{
+    background-color: gray;
+    border-color: gray;
+}
+
+.pj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pj button{
+    border-radius: 10%;
+    width: 100px;
+    margin: 8px 0;
+    color: white;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.pj img{
+    width: 350px;
+    height: 350px;
+    margin-top: 8px;
+
+    object-fit: scale-down;
+
+    text-align: center;
+}
+
+
+/*Aqui voy a colocar el div modular*/
+
+.info{
+    /*background-color: rgba(0,0,0,.8);*/
+    /*position: fixed;*/
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    /*
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    pointer-events: none;
+    */
+}
+#info:target{
+    opacity: 1;
+    pointer-events:auto;
+}
+
+.info-container{
+    min-height: 400px;
+    background-color: aliceblue;
+    margin: 20% 25% auto;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.info-container a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.info-all img{
+    height: 350px;
+    width: 350px;
+}
+
+.info-all div{
+    margin: 0 16px;
+}
+
+.info-all h2{
+    text-align: center;
+
+    font-size:xx-large;
+    margin-bottom: 16px;
+}
+
+.info-all p{
+    text-align: center;
+}
